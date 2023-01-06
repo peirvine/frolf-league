@@ -1,3 +1,5 @@
+import * as React from "react";
+import { NavLink } from "react-router-dom";
 import './nav.scss'
 
 export default function Nav() {
@@ -9,8 +11,12 @@ export default function Nav() {
           Such Frolf
         </div>
         <div className="leagueNavigation">
-          <a href="/">Add Scorecard</a>
-          <a href="/">Past Results</a>
+          <NavLink to ="/">Home</NavLink>
+          <NavLink to="add">Add Scorecard</NavLink>
+          <NavLink to="scorecards">Past Results</NavLink>
+          {/* <a href ="/">Home</a>
+          <a href="add">Add Scorecard</a>
+          <a href="scorecards">Past Results</a> */}
         </div>
       </div>
     </div>
