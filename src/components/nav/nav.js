@@ -13,10 +13,8 @@ export default function Nav() {
         <div className="leagueNavigation">
           <NavLink to ="/">Home</NavLink>
           <NavLink to="add">Add Scorecard</NavLink>
+          <NavLink to="rankings">Current Rankings</NavLink>
           <NavLink to="scorecards">Past Results</NavLink>
-          {/* <a href ="/">Home</a>
-          <a href="add">Add Scorecard</a>
-          <a href="scorecards">Past Results</a> */}
         </div>
       </div>
     </div>
