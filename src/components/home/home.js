@@ -1,5 +1,9 @@
+import "./home.scss"
+
 export default function Home () {
   return (
-    <p>Home sweet home!</p>
+    <div clssName="home">
+      <p>Home sweet home!</p>
+    </div>
   )
 }
