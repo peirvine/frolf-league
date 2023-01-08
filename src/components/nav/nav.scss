@@ -1,37 +1,17 @@
 @import '../../globalStyles.scss';
 
-.header {
-  height: 40px;
-  width: 100%;
-  border-bottom: 1px solid black;
-  background-color: $primary;
-  color: white;
+button {
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: $font-sm;
+  }
+}
 
-  .headerContent {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  
-    .leagueName {
-      float: left;
-      margin: $margin-md;
-      font-size: $font-md;
-    }
-  
-    .leagueNavigation {
-      float: right;
-      margin: $margin-md;
-  
-      a { 
-        color: white;
-        text-decoration: none;
-        padding: $padding-md;
-        font-size: $font-md;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
+li {
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: $font-sm;
   }
 }
