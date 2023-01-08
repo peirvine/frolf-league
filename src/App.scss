@@ -1,0 +1,15 @@
+@import './globalStyles.scss';
+
+html {
+  background-color: $background;
+}
+
+.frolfLeague {
+  .content {
+    background-color: $body-background;
+    width: 60%;
+    margin-top: $margin-lg;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
