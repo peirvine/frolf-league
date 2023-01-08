@@ -1,26 +1,3 @@
-// import * as React from "react";
-import { NavLink } from "react-router-dom";
-import './nav.scss'
-
-// export default function Nav() {
-
-//   return (
-//     <div className="header">
-//       <div className="headerContent">
-//         <div className="leagueName">
-//           Such Frolf
-//         </div>
-//         <div className="leagueNavigation">
-//           <NavLink to ="/">Home</NavLink>
-//           <NavLink to="add">Add Scorecard</NavLink>
-//           <NavLink to="rankings">Current Rankings</NavLink>
-//           <NavLink to="scorecards">Past Results</NavLink>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -30,11 +7,12 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+
+import { NavLink } from "react-router-dom";
+import './nav.scss'
 
 const pages = [
   {
