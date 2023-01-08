@@ -15,9 +15,10 @@
     "@types/node": "^16.11.52",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "@types/react-router": "^5.1.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.6.1",
+    "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
     "sass": "^1.57.1",
     "scss": "^0.2.4",
@@ -51,5 +52,8 @@
   "main": "index.js",
   "repository": "git@github.com:peirvine/frolf-league.git",
   "author": "Peter Irvine",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react-router-dom": "^5.3.3"
+  }
 }
