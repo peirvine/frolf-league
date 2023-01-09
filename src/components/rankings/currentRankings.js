@@ -6,7 +6,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-import { getRankings } from '../../services/rankings'
+import { getRankings } from '../../services/rankingsService'
 import './rankings.scss'
 // TODO: potentially break out the map to a different component in case we want different instances of rankings
 

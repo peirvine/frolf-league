@@ -6,5 +6,9 @@
     margin-top: $margin-lg;
     margin-right: auto;
     margin-left: auto;
+
+    .paperContent {
+      padding: $padding-md;
+    }
   }
 }

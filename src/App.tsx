@@ -36,7 +36,7 @@ function App() {
               <Nav />
           </header>
           <div className="content">
-            <Paper>
+            <Paper className="paperContent">
               <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/add" component={Add} />
