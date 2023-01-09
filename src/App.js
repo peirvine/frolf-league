@@ -2,12 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import { Amplify } from 'aws-amplify';
+import awsConfig from './aws-exports';
 import Paper from '@mui/material/Paper';
 import Nav from './components/nav/nav'
 import Home from './components/home/home'
 import Add from './components/add/add'
 import CurrentRankings from './components/rankings/currentRankings'
-import Scorecards from './components/scorecards/scorecards'
+import ViewScorecards from './components/scorecards/scorecards'
 import ErrorPage from './errorPage'
 import './App.scss';
 
@@ -26,6 +28,8 @@ const theme = createTheme({
   },
 });
 
+Amplify.configure(awsConfig);
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -40,7 +44,7 @@ function App() {
               <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/add" component={Add} />
-                <Route path="/scorecards" component={Scorecards} />
+                <Route path="/scorecards" component={ViewScorecards} />
                 <Route path="/rankings" component={CurrentRankings} />
                 <Route path="*" component={ErrorPage} />
               </Switch>
